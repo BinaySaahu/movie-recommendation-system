@@ -31,10 +31,10 @@ def recommend(movie):
     return names,posters
 
 
-st.title("Movie reccomender system")
+st.title("Movie recommender system")
 
 selected_movie_name = st.selectbox(
-    'How would you like to be contacted?',
+    'Enter the name of movie you want to see recomendations for!!',
     movies['title'].values)
 if st.button("Recommend"):
     names,posters = recommend(selected_movie_name)
